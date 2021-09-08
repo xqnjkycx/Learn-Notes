@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="ljk_sideshow_container">
+        <img class="ljk_sideshow_item" id="ljkSideshowItem">
+    </div>
+    <script src="./sideshow.js"></script>
+    <script>
+        let imgSrcs = ["./images/img1.jpg","./images/img2.jpg","./images/img3.jpg","./images/img4.jpg"];
+        let mySwitcher = new DirectlySwitcher();
+        mySwitcher.setImageSrcArr(imgSrcs);
+        new LjkSideShow(mySwitcher).go();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.ljk_sideshow_container{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    /* background: url(./images/img1.jpg) no-repeat; */
+    background-size: cover;
+    z-index: 1;
+}
+.ljk_sideshow_container:after{
+    content: "";
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    background: inherit;
+    filter: blur(20px);
+    z-index: 2;
+}
+.ljk_sideshow_item{
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    transform: translate(-50%);
+}
